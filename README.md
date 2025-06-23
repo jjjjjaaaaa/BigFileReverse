@@ -41,6 +41,9 @@ But since loading is demand-driven, scattered access patterns can cause cache mi
 2. Make it recoverable
 
 ## Usage
-- cmake .
-- make BigFileReverseTest
-- ./BigFileReverseTest
+
+```sh
+cmake .
+make BigFileReverseTest
+./BigFileReverseTest
+```
