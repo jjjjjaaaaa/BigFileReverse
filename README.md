@@ -29,10 +29,18 @@ This means fewer syscalls and often much better throughput, especially for large
 But since loading is demand-driven, scattered access patterns can cause cache misses and I/O thrashing.
 
 ## Test Results
-- Test file: 57MB, `CHUNK_SIZE` set to 8MB  
+### Test file: 57MB, `CHUNK_SIZE` set to 8MB  
 - For stream, it takes around 450ms.  
 - For mmap, it takes around 350ms.
+### Test file: 25MB, `CHUNK_SIZE` set to 8MB  
+- For stream, it takes around 200ms.  
+- For mmap, it takes around 133ms. 
 
 ## TODO
 1. Make it multi-threaded
 2. Make it recoverable
+
+## Usage
+- cmake .
+- make BigFileReverseTest
+- ./BigFileReverseTest
