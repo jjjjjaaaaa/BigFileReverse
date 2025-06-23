@@ -38,7 +38,7 @@ int main()
             std::cerr << "Mmap processing result does not match the golden file." << std::endl;
         }
 
-        //std::filesystem::remove(destinationPath); // Clean up the copied file
+        std::filesystem::remove(destinationPath); // Clean up the copied file
     }
 
     {
@@ -70,7 +70,7 @@ int main()
             std::cerr << "Stream processing result does not match the golden file." << std::endl;
         }
 
-        //std::filesystem::remove(destinationPath); // Clean up the copied file
+        std::filesystem::remove(destinationPath); // Clean up the copied file
     }
 
     return 0;
